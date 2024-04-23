@@ -2,6 +2,7 @@
     width: 100%; 
     height: 150px; 
     object-fit: cover; 
+    position: static;
 }
 
 h1, h2, h3 {
@@ -27,14 +28,21 @@ body {
     padding: 10px;
     text-align: center;
 }
-a {
-    color: #236427 !important
+a:link {
+    color: #a61da6;
+}
+
+a:visited {
+    color: #075431;
 }
 
 a:hover {
-    color: #1d6da6 !important
+    color: #d78746;
 }
 
+a:active {
+    color: #c12f2f;
+}
 img {
     display: inline-block;
     margin: 10 25px;
@@ -80,7 +88,9 @@ th {
 .images-container {
     display: flex;
     justify-content: center; 
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    margin-right: 20px;
+    float: left;
 }
 body .exercise-image {
     width: 300px; 
@@ -92,5 +102,17 @@ body .exercise-image {
     display: block;
 }
 
+ul li:first-child {
+    font-weight: bold;
+}
+
+#unique h1:before {
+    content: "Welcome to the site about ";
+    color: #064a2c;
+}
+#unique h1:after {
+    content: " - hope you will enjoy!";
+    color: #064a2c;
+}
 
 
